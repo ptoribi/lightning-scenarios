@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# DESCRIPTION: (direct execution)
+# DESCRIPTION: RYSCA (direct execution): Escenario simple con 2 PCs y un router (útil para pruebas de desarrollo con librawnet)
 
 LIGHTNING_INSTALLATION_PATH=$(dirname $(readlink -f $(which lightning)))
 source $LIGHTNING_INSTALLATION_PATH/functions
