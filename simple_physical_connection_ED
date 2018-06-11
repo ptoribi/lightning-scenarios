@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# DESCRIPTION: Example: scenario with one PC connected to the physical host interface enp0s3
+# DESCRIPTION: Example (ED): scenario with one PC connected to the physical host interface enp0s3
 
 LIGHTNING_INSTALLATION_PATH=$(dirname $(readlink -f $(which lightning)))
 source $LIGHTNING_INSTALLATION_PATH/functions
