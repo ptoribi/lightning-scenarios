@@ -8,7 +8,6 @@ source $LIGHTNING_INSTALLATION_PATH/personalized_functions
 
 # CREACIÓN Y CONFIGURACIÓN DE CONTAINERS
 create_container h1 hostPhysConn host
-create_interface h1 phys
 connect_machine_physical h1 phys enp0s3
 clear_interface h1 phys
 
