@@ -4,16 +4,16 @@
 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 xsi:noNamespaceSchemaLocation="lightning-xml-schema.xsd">
 
-  <container name="hostX" type="host">
+  <container name="hX" hostname="hostX" type="host">
     <interface name="eth1" enable_ipv6="yes" link_local_ipv6="no"/>
   </container>
   
-  <container name="hostY" type="host">
+  <container name="hY" hostname="hostY" type="host">
     <interface name="eth1" enable_ipv6="yes" link_local_ipv6="no"/>
   </container>
   
-  <container name="R1" type="router">
-    <interface name="eth0.0" enable_ipv6="yes">
+  <container name="R1" hostname="Router1" type="router">
+    <interface name="eth0.0" enable_ipv6="yes" link_local_ipv6="no">
       <default_ip>192.168.0.1/24</default_ip>
     </interface>
     <interface name="eth0.1" enable_ipv6="yes" link_local_ipv6="no">
@@ -36,7 +36,7 @@ xsi:noNamespaceSchemaLocation="lightning-xml-schema.xsd">
   
   <network name="Red1" type="switch">
     
-    <container name="hostX">
+    <container name="hX">
       <interface name="eth1">
         <ip>192.100.100.101/24</ip>
       </interface>
@@ -51,7 +51,7 @@ xsi:noNamespaceSchemaLocation="lightning-xml-schema.xsd">
   
   <network name="Red2" type="switch">
     
-    <container name="hostY">
+    <container name="hY">
       <interface name="eth1">
         <ip>192.100.100.102/24</ip>
       </interface>
